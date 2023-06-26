@@ -1,4 +1,4 @@
-package model;
+package com.anya.crudapp.model;
 import java.util.List;
 
 
@@ -7,17 +7,25 @@ public class Writer {
     private String firstName;
     private String lastName;
     private List<Post> posts;
-    private PostStatus status = PostStatus.ACTIVE;
+    private Status status = Status.ACTIVE;
 
-    public PostStatus getStatus() {
+    public Writer() {
+    }
+
+    public Writer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(PostStatus status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -41,6 +49,10 @@ public class Writer {
         this.lastName = lastName;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public List<Post> getPosts() {
         return posts;
     }
@@ -49,7 +61,6 @@ public class Writer {
         this.posts = posts;
     }
 
-
     @Override
     public String toString() {
         return "Writer{" +
@@ -57,7 +68,6 @@ public class Writer {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", posts=" + posts +
-                ", status=" + status +
                 '}';
     }
 }
