@@ -1,0 +1,1 @@
+[{"id":1,"firstName":"Petr","lastName":"Petrov","posts":[{"id":1,"content":"Hello all","created":{"date":{"year":2023,"month":6,"day":26},"time":{"hour":14,"minute":27,"second":6,"nano":408000000}},"labels":[{"id":1,"name":"psychology","status":"ACTIVE"}],"status":"ACTIVE"}],"status":"ACTIVE"}]
